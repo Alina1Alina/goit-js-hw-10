@@ -27,7 +27,7 @@ function renderingCountry(arrayCountry) {
       item =>
         `<li class="country-item"><img src=${item.flags.svg} alt="${item.flags.alt}"/><p class="country_name">${item.name.official}</p></li>`
     );
-    refs.list.innerHTML = result;
+    refs.list.innerHTML = result.join('');
   }
   if (arrayCountry.length === 1) {
     refs.list.innerHTML = '';
